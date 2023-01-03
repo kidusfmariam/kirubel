@@ -1,0 +1,36 @@
+.landing-wrapper{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+}
+.landing-container{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    height: 70vh;
+}
+.landing-images{
+    position: relative;
+    width: 60%;
+}
+.landing-img{
+    position: absolute;
+}
+ .landing-img-3{
+    display: none;
+}
+.landing-img-1{
+    width: clamp(10rem, 25vw, 50rem);
+    z-index: 4;
+    bottom: 4vh;
+    left: -3rem;
+}
+.landing-img-2{
+    width: 30rem;
+    left: 5rem;
+    top: 0;
+}
