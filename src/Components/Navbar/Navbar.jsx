@@ -10,7 +10,11 @@ const Navbar = () => {
     }
   return (
     <AnimatePresence>
-    <nav>
+    <motion.nav
+    initial={{opacity: 0, y: "-200%"}}
+    animate={{opacity: 1, y: 0}}
+    transition={{duration: 1.3, delay: .4}}
+    >
         <div className={`nav-logo ${nav ? "invisible" : ""}`}>
             <img src="/Assets/Navbar/kirubel-logo.png" alt="kirubel-logo" />
         </div>
@@ -19,7 +23,7 @@ const Navbar = () => {
             <div className={`line ${nav ? "rotated-1" : ""}`}></div>
             <div className={`line ${nav ? "rotated-2" : ""}`}></div>
         </div>
-    </nav>
+    </motion.nav>
 
     <motion.div 
     initial={{y: "-100%"}}
@@ -43,7 +47,7 @@ const Navbar = () => {
                 whileInView={{opacity: 1, x: 0}}
                 transition={{duration: 1.5, delay: 0.6}}
                 exit={{x:"-100%"}}
-                >ABOUT</motion.h1>
+                >PROJECTS</motion.h1>
                 <div className='overlay overlay-2'></div>
         </div>
 
@@ -54,7 +58,7 @@ const Navbar = () => {
                 whileInView={{opacity: 1, x: 0}}
                 transition={{duration: 1.5, delay: 1}}
                 exit={{x:"-100%"}}
-                >PROJECTS</motion.h1>
+                >CONTACT</motion.h1>
                 <div className='overlay overlay-3'></div>
         </div>
     </motion.div>

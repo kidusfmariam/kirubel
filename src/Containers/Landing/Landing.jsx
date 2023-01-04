@@ -1,20 +1,39 @@
 import React from 'react'
 import './Landing.css'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { images } from '../../LandingPageImg'
 const Landing = () => {
+    
+    const [currentImage, setCurrentImage] = useState(null);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentImage(images[Math.floor(Math.random() * 6)]);
+        }, 1000)
+        
+        return () => clearInterval(intervalId);
+    }, [])
   return (
     <section className='landing-wrapper'>
         <div className="landing-container">
-            <h1>KIRUBEL F.MARIAM</h1>
-            <div className='landing-img-container'>
-                <img src="/Assets/Home/landing-img-1.jpg" alt="" />
-            </div>
-            <div className='landing-img-container'>
-                <img src="/Assets/Home/landing-img-2.jpg" alt="" />
-            </div>
-            <div className='landing-img-container'>
-                <img src="/Assets/Home/landing-img-3.jpg" alt="" />
-            </div>
+            <motion.h1
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{duration: 1, delay: 2}}
+            >KIRUBEL F.MARIAM</motion.h1>
+            <motion.div
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{duration: 1.5, delay: 0.8}} 
+            className='landing-img-container '>
+               <motion.img 
+               initial={{opacity: 0, scale: 1.4}}
+               whileInView={{opacity: 1, scale: 1}}
+               transition={{duration: 1.5, delay: 0.8}}
+               src={currentImage} alt="img" className='img' />
+            </motion.div>
+           
         </div>
     </section>
   )
