@@ -9,7 +9,7 @@ const Navbar = () => {
        body.style.background= color;
     }
   return (
-    <AnimatePresence>
+    <>
     <motion.nav
     initial={{opacity: 0, y: "-200%"}}
     animate={{opacity: 1, y: 0}}
@@ -64,7 +64,7 @@ const Navbar = () => {
     </motion.div>
 
     
-    </AnimatePresence>
+    </>
   )
 }
 
