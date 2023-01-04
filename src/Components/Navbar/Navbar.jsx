@@ -1,49 +1,66 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 const Navbar = () => {
     const[nav, setNav] = useState(false)
+    const changeColor = (color) =>{
+       const body = document.getElementsByClassName('nav-links');
+       body.style.background= color;
+    }
   return (
-    <>
+    <AnimatePresence>
     <nav>
-        <div className='nav-logo'>
+        <div className={`nav-logo ${nav ? "invisible" : ""}`}>
             <img src="/Assets/Navbar/kirubel-logo.png" alt="kirubel-logo" />
         </div>
-        <div className='nav-menu-lg'>
-            <p className='nav-lg-link'>About</p>
-            <p className='nav-lg-link'>Projects</p>
-            <p className='menu-btn' onClick={() => setNav(!nav)}><AiOutlineMenu/></p>
+
+        <div className='nav-btn' onClick={() => setNav(!nav)}>
+            <div className={`line ${nav ? "rotated-1" : ""}`}></div>
+            <div className={`line ${nav ? "rotated-2" : ""}`}></div>
         </div>
     </nav>
 
     <motion.div 
-    initial={{x: "-200%"}}
-    animate={{x: nav ? 0 : "-200%"}}
-    transition={{duration: 1}}
-    className='nav-menu-sm'>
-        <div className='close-btn' onClick={() => setNav(!nav)}><AiOutlineClose size={40}/></div>
-        <div>
-        <motion.div 
-        initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
-        transition={{duration: 1.3, delay: 0.5}}
-        className='nav-logo-sm'>
-            <img src="/Assets/Navbar/kirubel-logo.png" alt="kirubel-logo" />
-        </motion.div>
-            <motion.p 
-            initial={{opacity: 0}}
-            whileInView={{opacity: 1}}
-            transition={{duration: 1.3, delay: 0.7}}
-            className='nav-sm-link'>ABOUT</motion.p>
-            <motion.p 
-            initial={{opacity: 0}}
-            whileInView={{opacity: 1}}
-            transition={{duration: 1.3, delay: 0.9}}
-            className='nav-sm-link'>PROJECTS</motion.p>
+    initial={{y: "-100%"}}
+    animate={{y: nav ? 0 : "-100%"}}
+    transition={{duration: 1, delay: 0.3}}
+    className='nav-links'>
+        <div className='nav-link nav-link-1'>
+                <motion.h1
+                initial={{opacity: 0, x: "-100%"}}
+                whileInView={{opacity: 1, x: 0}}
+                transition={{duration: 1.5, delay: 0.2}}
+                exit={{x:"-100%"}}
+                >HOME</motion.h1>
+                <div className='overlay overlay-1'></div>
+        </div>
+
+
+        <div className='nav-link nav-link-2'>
+                <motion.h1
+                initial={{opacity: 0, x: "-100%"}}
+                whileInView={{opacity: 1, x: 0}}
+                transition={{duration: 1.5, delay: 0.6}}
+                exit={{x:"-100%"}}
+                >ABOUT</motion.h1>
+                <div className='overlay overlay-2'></div>
+        </div>
+
+
+        <div className='nav-link nav-link-3'>
+                <motion.h1
+                initial={{opacity: 0, x: "-100%"}}
+                whileInView={{opacity: 1, x: 0}}
+                transition={{duration: 1.5, delay: 1}}
+                exit={{x:"-100%"}}
+                >PROJECTS</motion.h1>
+                <div className='overlay overlay-3'></div>
         </div>
     </motion.div>
-    </>
+
+    
+    </AnimatePresence>
   )
 }
 

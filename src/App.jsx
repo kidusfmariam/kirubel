@@ -4,9 +4,11 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Projects from './Pages/Projects'
 import Navbar from './Components/Navbar/Navbar'
+import { AnimatePresence } from 'framer-motion'
 function App() {
 
   return (
+    <AnimatePresence>
     <Router>
       <Navbar/>
       <Routes>
@@ -15,6 +17,7 @@ function App() {
         <Route path='/projects' element={<Projects/>}></Route>
       </Routes>
     </Router>
+    </AnimatePresence>
   )
 }
 
