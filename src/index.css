@@ -14,8 +14,21 @@
     color: var(--bg-main);
 }
 body{
-    background-color: var(--bg-main);
-    font-family: 'Open Sans', sans-serif;
+    background-image: radial-gradient(circle, rgb(49, 144, 228, 0.1) -1000%, var(--bg-main) 100%);
+    font-family: 'Raleway', sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    background: #000;
+    padding: 0 1px;
+    width: 3px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #ffffff;
+    width: 1px;
 }
 h1, h2, h3, h4, h5, h6{
     color: var(--color-main);
