@@ -73,5 +73,12 @@
     cursor: pointer;
     font-weight: 300;
     border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .about-img{
+        width: clamp(20rem, 50vw, 300rem);
+    }
 }
 

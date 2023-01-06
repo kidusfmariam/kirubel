@@ -11,10 +11,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 3rem;
 }
 .introduction h1{
     font-weight: 300;
-    font-size: clamp(3rem, 7vw, 30rem);
+    font-size: clamp(2rem, 7vw, 30rem);
     text-transform: uppercase;
     text-align: center;
 }
@@ -24,6 +25,7 @@
     font-weight: 100;
     text-transform: uppercase;
     line-height: 4vh;
+    font-size: clamp(.7rem, 1.2vw, 5rem);
 }
 .introduction-img, .main-media, .final-img{
     width: 100%;
@@ -47,11 +49,18 @@
 
 }
 .closing p{
-    font-size: clamp(2rem, 2.5vw, 20rem);
+    font-size: clamp(1.1rem, 1.2vw, 20rem);
     font-weight: 100;
     margin: 5rem 0;
     text-transform: uppercase;
     width: 50vw;
     text-align: center;
     height: 100%;
+    line-height: 35px;
+}
+@media screen and (max-width: 500px) {
+    .introduction p{
+        line-height: 2.3vh;
+        margin-top: 3rem;
+    }
 }

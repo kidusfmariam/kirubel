@@ -42,7 +42,7 @@ const ProjectDetail = () => {
         </div>
 
         <div className='closing'>
-            <p>More about this project <a target='_blank' href={thisProject.link}>here</a></p>
+            <p><a target='_blank' href={thisProject.link}>More about this project here</a></p>
             <Link style={{textDecoration: 'none'}} to='/projects'><p>Back to Projects</p></Link>
         </div>
 

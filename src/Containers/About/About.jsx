@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { Link } from 'react-router-dom'
 const About = () => {
     const { scrollYProgress } = useScroll();
-    const x = useTransform(scrollYProgress, [0, 1], [700, -2000], [0.23, -0.9, 0.34, 0.99] )
+    const x = useTransform(scrollYProgress, [0, 1], [1000, -3000], [0.23, -0.9, 0.34, 0.99] )
 
 
     const [mousePosition, setMousePosition] = useState({
