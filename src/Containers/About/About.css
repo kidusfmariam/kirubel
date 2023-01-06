@@ -2,6 +2,7 @@
     width: 100vw;
     height: auto;
     padding-top: clamp(2rem, 4vh, 40rem);
+    overflow-x: hidden;
 }
 .title-container{
     width: 100vw;
