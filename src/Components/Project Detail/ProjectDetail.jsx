@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router'
 import { projects } from '../../../Projects'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import './ProjectDetail.css'
 const ProjectDetail = () => {
 
@@ -10,12 +11,20 @@ const ProjectDetail = () => {
 
   return (
     <div className='detail-wrapper'>
-        <div className='introduction'>
+        <motion.div
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{duration: 1.2, delay: 0.3}}
+        className='introduction'>
             <h1>{thisProject.title}</h1>
             <p>{thisProject.description}</p>
-        </div>
+        </motion.div>
         <div className='introduction-img'>
-        <img src={thisProject.imageOne} alt="" />
+        <motion.img 
+        initial={{y: 500}}
+        animate={{y: 0}}
+        transition={{duration: 1.2, dealy: 0.5}}
+        src={thisProject.imageOne} alt="landing-img" />
         </div>
 
         <div className='main-media'>
@@ -33,8 +42,8 @@ const ProjectDetail = () => {
         </div>
 
         <div className='closing'>
-            <p>Find out more about this project <a target='_blank' href={thisProject.link}>here</a></p>
-            <Link to='/projects'><p>Back to Projects</p></Link>
+            <p>More about this project <a target='_blank' href={thisProject.link}>here</a></p>
+            <Link style={{textDecoration: 'none'}} to='/projects'><p>Back to Projects</p></Link>
         </div>
 
     </div>

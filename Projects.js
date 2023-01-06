@@ -1,7 +1,7 @@
 export const projects = [
     {
         id: "01",
-        title: "Journey",
+        title: "JOURNEY",
         link: "https://www.therookies.co/entries/17064",
         description: "For this Project, I was planning on creating a series of cinematic renders that show the journey of two frogs. It was a project that presented a challenge in executing multiple aspects of 3D like modeling, texturing, rigging, lighting and composition. I'm quite happy with the results and I hope you'll also enjoy taking a look.", 
         video: "",
