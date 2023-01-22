@@ -24,7 +24,7 @@ const Landing = () => {
             whileInView={{opacity: 1}}
             transition={{duration: 1, delay: 3}}
             viewport={{once: true}}
-            >KIRUBEL F.MARIAM</motion.h1>
+            >KIRUBEL F.MARIAM - 3D ARTIST</motion.h1>
             <motion.div
             initial={{opacity: 0, top:"50%"}}
             whileInView={{opacity: 1}}

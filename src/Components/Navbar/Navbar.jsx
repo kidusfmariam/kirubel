@@ -31,14 +31,14 @@ const Navbar = () => {
     <motion.div 
     initial={{y: "-100%"}}
     animate={{y: nav ? 0 : "-100%"}}
-    transition={{duration: 1, delay: 0.3}}
+    transition={{duration: 1, delay: 0.1}}
     className='nav-links'>
        <Link style={{textDecoration: 'none'}} to='/'>
         <div className='nav-link nav-link-1' onClick={() => setNav(!nav)}>
                 <motion.h1
                 initial={{opacity: 0, x: "-100%"}}
                 whileInView={{opacity: 1, x: 0}}
-                transition={{duration: 1.5, delay: 0.2}}
+                transition={{duration: 1.2, delay: 0.2}}
                 exit={{x:"-100%"}}
                 >HOME</motion.h1>
                 <div className='overlay overlay-1'></div>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 <motion.h1
                 initial={{opacity: 0, x: "-100%"}}
                 whileInView={{opacity: 1, x: 0}}
-                transition={{duration: 1.5, delay: 0.6}}
+                transition={{duration: 1.2, delay: 0.4}}
                 exit={{x:"-100%"}}
                 >PROJECTS</motion.h1>
                 <div className='overlay overlay-2'></div>
@@ -63,7 +63,7 @@ const Navbar = () => {
                 <motion.h1
                 initial={{opacity: 0, x: "-100%"}}
                 whileInView={{opacity: 1, x: 0}}
-                transition={{duration: 1.5, delay: 1}}
+                transition={{duration: 1.2, delay: 0.6}}
                 exit={{x:"-100%"}}
                 >CONTACT</motion.h1>
                 <div className='overlay overlay-3'></div>

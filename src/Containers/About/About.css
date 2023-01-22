@@ -20,12 +20,15 @@
     margin-bottom: 30vh;
 }
 .about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 5vw;
 }
 .about-img{
-    width: 30vw;
+    width: 25vw;
     height: 60vh;
-    padding-right: 5vw;
 }
 .about-content, .about-text{
     display: flex;
@@ -83,3 +86,8 @@
     }
 }
 
+@media screen and (max-width: 700px){
+    .cursor{
+        display: none;
+    }
+}

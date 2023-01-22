@@ -110,3 +110,9 @@ nav{
     background-color: #7c9eb2;
     opacity: 1;
 }
+
+@media screen and (max-width: 400px) {
+    .nav-logo{
+        margin-left: -2rem;
+    }
+}

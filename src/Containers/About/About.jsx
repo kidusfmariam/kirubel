@@ -68,6 +68,7 @@ const About = () => {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 1.4, delay: 0.3}}
+        viewport={{once: true}}
         className='about-text'>
             <p className='about-p'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim commodi, amet alias nisi nostrum minima atque perspiciatis molestiae libero, doloribus nesciunt. Consequuntur nemo ad adipisci expedita! Maiores vitae labore blanditiis magni ut quibusdam error assumenda? Dignissimos mollitia nulla voluptas rerum possimus! Atque quo unde iste.</p>
             </motion.div>
@@ -78,6 +79,7 @@ const About = () => {
             initial={{height: 1}}
             whileInView={{height: "100%"}}
             transition={{duration: 1.2, delay: 0.1}}
+            viewport={{once: true}}
             src="/Assets/About/profile.png" alt="a picture of kirubel" />
         </motion.div>
 
@@ -85,6 +87,7 @@ const About = () => {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 1.2, delay: 0.8}}
+        viewport={{once: true}}
         href="#" className='contact-cta'  onMouseEnter={textEnter} onMouseLeave={textLeave}>
                 <p>CONTACT ME</p>
             </motion.a>
@@ -95,6 +98,7 @@ const About = () => {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 1.2, delay: 0.8}}
+        viewport={{once: true}}
         className='about-cta'>
             <h1 onMouseEnter={textEnter} onMouseLeave={textLeave}>View my projects</h1>
         </motion.div>

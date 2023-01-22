@@ -37,6 +37,25 @@ const ProjectDetail = () => {
             src={thisProject.video} 
             className='media media-2' ></video>
         </div>
+        <div className='bts-img'>
+            <h1 className='bts-title'>BEHIND THE SCENES</h1>
+            <div className='bts-img-container'>
+                    <div className="bts-grid">
+                        <img src={thisProject.btsImg1} alt={thisProject.title} />
+                        <img src={thisProject.btsImg2} alt={thisProject.title} />
+                        <img src={thisProject.btsImg3} alt={thisProject.title} />
+                        <img src={thisProject.btsImg4} alt={thisProject.title} />
+                        <img src={thisProject.btsImg5} alt={thisProject.title} />
+                        <img src={thisProject.btsImg6} alt={thisProject.title} />
+                        <img src={thisProject.btsImg7} alt={thisProject.title} />
+                        <img src={thisProject.btsImg8} alt={thisProject.title} />
+                        <img src={thisProject.btsImg9} alt={thisProject.title} />
+                        <img src={thisProject.btsImg10} alt={thisProject.title} />
+                        <img src={thisProject.btsImg11} alt={thisProject.title} />
+                        <img src={thisProject.btsImg12} alt={thisProject.title} />
+                    </div>
+            </div>
+        </div>
         <div className='final-img'>
             <img src={thisProject.imageTwo} alt="" />
         </div>
