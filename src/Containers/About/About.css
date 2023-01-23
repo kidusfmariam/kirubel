@@ -18,6 +18,7 @@
     -webkit-text-stroke: 1px #fff;
     text-transform: uppercase;
     margin-bottom: 30vh;
+    opacity: .4;
 }
 .about-content{
     display: flex;
@@ -47,7 +48,6 @@
     line-height: 3vh;
     width: 80%;
     margin: auto;
-    text-transform: uppercase;
     text-align: center;
     font-size: clamp(1rem, 1.2vw, 5rem);
 }

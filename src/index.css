@@ -10,7 +10,7 @@
 }
 
 *::selection{
-    background-color: var(--color-main);
+    background-color: rgb(180, 179, 179);
     color: var(--bg-main);
 }
 body{
