@@ -41,18 +41,78 @@ const ProjectDetail = () => {
             <h1 className='bts-title'>BEHIND THE SCENES</h1>
             <div className='bts-img-container'>
                     <div className="bts-grid">
-                        <img src={thisProject.btsImg1} alt={thisProject.title} />
-                        <img src={thisProject.btsImg2} alt={thisProject.title} />
-                        <img src={thisProject.btsImg3} alt={thisProject.title} />
-                        <img src={thisProject.btsImg4} alt={thisProject.title} />
-                        <img src={thisProject.btsImg5} alt={thisProject.title} />
-                        <img src={thisProject.btsImg6} alt={thisProject.title} />
-                        <img src={thisProject.btsImg7} alt={thisProject.title} />
-                        <img src={thisProject.btsImg8} alt={thisProject.title} />
-                        <img src={thisProject.btsImg9} alt={thisProject.title} />
-                        <img src={thisProject.btsImg10} alt={thisProject.title} />
-                        <img src={thisProject.btsImg11} alt={thisProject.title} />
-                        <img src={thisProject.btsImg12} alt={thisProject.title} />
+                        <motion.img 
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 1.2, delay: 0.2}}
+                        viewport={{once: true}}
+                        src={thisProject.btsImg1} alt={thisProject.title} />
+                        <motion.img 
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 1.2, delay: 0.2}}
+                        viewport={{once: true}}
+                        src={thisProject.btsImg2} alt={thisProject.title} />
+                        <motion.img 
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 1.2, delay: 0.2}}
+                        viewport={{once: true}}
+                        src={thisProject.btsImg3} alt={thisProject.title} />
+                        <motion.img 
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 1.2, delay: 0.2}}
+                        viewport={{once: true}}
+                        src={thisProject.btsImg4} alt={thisProject.title} />
+                        <motion.img 
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 1.2, delay: 0.2}}
+                        viewport={{once: true}}
+                        src={thisProject.btsImg5} alt={thisProject.title} />
+                        <motion.img 
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 1.2, delay: 0.2}}
+                        viewport={{once: true}}
+                        src={thisProject.btsImg6} alt={thisProject.title} />
+                        <motion.img 
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 1.2, delay: 0.2}}
+                        viewport={{once: true}}
+                        src={thisProject.btsImg7} alt={thisProject.title} />
+                        <motion.img 
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 1.2, delay: 0.2}}
+                        viewport={{once: true}}
+                        src={thisProject.btsImg8} alt={thisProject.title} />
+                        <motion.img 
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 1.2, delay: 0.2}}
+                        viewport={{once: true}}
+                        src={thisProject.btsImg9} alt={thisProject.title} />
+                        <motion.img 
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 1.2, delay: 0.2}}
+                        viewport={{once: true}}
+                        src={thisProject.btsImg10} alt={thisProject.title} />
+                        <motion.img 
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 1.2, delay: 0.2}}
+                        viewport={{once: true}}
+                        src={thisProject.btsImg11} alt={thisProject.title} />
+                        <motion.img 
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 1.2, delay: 0.2}}
+                        viewport={{once: true}}
+                        src={thisProject.btsImg12} alt={thisProject.title} />
                     </div>
             </div>
         </div>
