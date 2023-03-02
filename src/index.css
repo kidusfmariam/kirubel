@@ -13,9 +13,7 @@
     background-color: rgb(180, 179, 179);
     color: var(--bg-main);
 }
-*{
-    scroll-behavior: smooth;
-}
+
 body{
     background-image: radial-gradient(circle, rgb(49, 144, 228, 0.1) -1000%, var(--bg-main) 100%);
     font-family: 'Raleway', sans-serif;
