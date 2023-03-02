@@ -6,7 +6,7 @@ import { projects } from '../../../Projects'
 const Parallax = () => {
   console.log(projects)
   return (
-    <div className='parallax-container'>
+    <>
         {
             projects.map((item) => {
               return (
@@ -23,7 +23,7 @@ const Parallax = () => {
               )
             })
         }
-    </div>
+    </>
   )
 }
 
